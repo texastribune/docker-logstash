@@ -27,6 +27,7 @@ RUN pip install httpie
 #RUN echo "US/Central" > /etc/timezone
 #RUN dpkg-reconfigure --frontend noninteractive tzdata
 
-CMD /start.sh
+CMD /opt/logstash/bin/logstash -f /logstash.conf
 
 EXPOSE 514
+EXPOSE 5000
