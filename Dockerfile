@@ -1,6 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Daniel Craigmile
-ENV DEBIAN_FRONTEND noninteractive
+MAINTAINER tech@texastribune.org
 
 RUN apt-get update -y
 
